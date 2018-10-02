@@ -1,0 +1,40 @@
+// Typography
+
+$font-family-daxline-pro: 'Daxline Pro', 'Helvetica Neue', Helvetica !default;
+$font-family-base: $font-family-daxline-pro;
+$font-family-icons: 'll-icon-font';
+$font-size-base: 14px;
+$font-weight-base: 300;
+$line-height-base: 21px;
+
+$font-size-larger: 28px;
+$font-size-large: 21px;
+$font-size-medium: 17px;
+$font-size-small: 12px;
+
+$line-height-large: 30px;
+
+$base-spacing-unit: 7px;
+$half-spacing-unit: 3px;
+
+$border-radius-base: 2px;
+
+// Buttons
+$btn-border-radius: $border-radius-base;
+$btn-font-weight: 900;
+$btn-width-large: 159px;
+$btn-height-large: 49px;
+$btn-width-small: 85px;
+$btn-height-small: 32px;
+
+// Media Queries
+$screen-small: 320px !default;
+$screen-medium: 768px !default;
+$screen-large: 1024px !default;
+
+$small: 'only screen and (min-width: #{$screen-small})';
+$medium: 'only screen and (min-width: #{$screen-medium})';
+$large: 'only screen and (min-width: #{$screen-large})';
+
+// Grid
+$gutter: $base-spacing-unit;
