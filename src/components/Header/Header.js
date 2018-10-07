@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo.JPG";
+import logo from "../../assets/images/logo.jpg";
 import Button from '../Button/Button';
 
 const Header = () => <header className="header">
