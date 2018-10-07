@@ -1,0 +1,71 @@
+defaults: &defaults
+  working_directory: ~/lotto-web
+  docker:
+  - image: circleci/node:8.12
+    environment:
+      TERM: xterm ## this enables colors in the output
+
+references:
+  build_bundle: &build_bundle
+    run:
+      name: Build prod bundle
+      command:
+        npm run build
+  cache_restore: &cache_restore
+    restore_cache:
+      keys:
+      - v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - v1-{{ .Branch }}
+      - v1
+  cache_save: &cache_save
+    save_cache:
+      paths:
+      - ~/.cache
+      - ~/.npm
+      key: v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+version: 2
+jobs:
+  build:
+    <<: *defaults
+    steps:
+    - checkout
+    - *cache_restore
+    - run:
+        name: Install NPM Dependencies
+        command: npm ci
+    - *cache_save
+    - persist_to_workspace:
+        root: ~/
+        paths:
+        - lotto-web
+  test_unit:
+    <<: *defaults
+    steps:
+    - attach_workspace:
+        at: ~/
+    - run: npm test
+  deploy:
+    <<: *defaults
+    steps:
+    - attach_workspace:
+        at: ~/
+    - run:
+        name: Deploy Master to Heroku
+        command: |
+          git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+workflows:
+  version: 2
+  test_build_deploy:
+    jobs:
+    - build
+    - test_unit:
+        requires:
+        - build
+    - deploy:
+        filters:
+          branches:
+            only: master
+        requires:
+        - build
+        - test_unit
+
