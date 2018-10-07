@@ -32,9 +32,9 @@ $screen-small: 320px !default;
 $screen-medium: 768px !default;
 $screen-large: 1024px !default;
 
-$small: 'only screen and (min-width: #{$screen-small})';
-$medium: 'only screen and (min-width: #{$screen-medium})';
-$large: 'only screen and (min-width: #{$screen-large})';
+$small: 'only screen and (max-width: #{$screen-small})';
+$medium: 'only screen and (max-width: #{$screen-medium})';
+$large: 'only screen and (max-width: #{$screen-large})';
 
 // Grid
 $gutter: $base-spacing-unit;

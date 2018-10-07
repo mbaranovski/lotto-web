@@ -1,0 +1,25 @@
+
+$header-height: 70px;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $header-bg;
+  height: $header-height;
+  border-bottom: 2px solid $gray;
+  padding: 0 ($base-spacing-unit * 3);
+
+  &__content {
+    display: flex;
+  }
+
+  &__text {
+    padding: 0 ($base-spacing-unit * 2);
+    color: $green;
+    font-size: $font-size-medium;
+    font-family: "Arial";
+    font-style: italic;
+    line-height: $btn-height-small;
+  }
+}

@@ -1,0 +1,20 @@
+
+.button {
+  padding: $base-spacing-unit 0;
+  text-align: center;
+  border-radius: $btn-border-radius;
+  font-weight: $btn-font-weight;
+  background: linear-gradient(90deg, $green-light 0%, $green 100%);
+  box-shadow: 0 4px 7px 0 rgba(1,36,6,0.2);
+  color: $white;
+
+  &--small {
+    width: $btn-width-small;
+    height: $btn-height-small
+  }
+
+  &--large {
+    width: $btn-width-large;
+    height: $btn-height-large;
+  }
+}
