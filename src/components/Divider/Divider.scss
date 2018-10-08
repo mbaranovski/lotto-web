@@ -1,0 +1,45 @@
+
+.divider {
+  width: 100%;
+  align-self: center;
+  background-color: $white;
+  margin: $base-spacing-unit * 3 0;
+  text-align: center;
+
+  @media #{$small} {
+    margin: $base-spacing-unit 0;
+
+  }
+
+
+  &__text {
+    font-size: $font-size-larger;
+    font-weight: 900;
+    display: flex;
+
+
+    @media #{$small} {
+      line-height: $base-spacing-unit * 4;
+      flex-direction: column;
+    }
+
+    &--align {
+      margin: 0 auto;
+    }
+
+    &--green {
+      color: $green;
+    }
+  }
+
+  &__image {
+    margin-top: $base-spacing-unit * 2;
+
+    @media #{$small} {
+      margin-top: $base-spacing-unit;
+
+    }
+  }
+
+
+}

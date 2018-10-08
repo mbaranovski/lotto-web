@@ -9,21 +9,23 @@
   overflow: hidden;
 
   &__container {
-    background-color: #000;
     width: $screen-large;
+    display: flex;
+    flex-direction: column;
+
 
     @media #{$large} {
-      background-color: blue;
+
       width: 100%;
     }
 
     @media #{$medium} {
-      background-color: red;
+
       width: 100%;
     }
 
     @media #{$small} {
-      background-color: pink;
+
       width: 100%;
     }
   }
