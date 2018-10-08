@@ -24,8 +24,13 @@ body {
 }
 
 a {
-  color: inherit;
+  color: $green;
+  font-weight: 800;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &:focus {
     outline: none;
