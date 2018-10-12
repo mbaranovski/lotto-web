@@ -46,3 +46,12 @@ button {
     outline: none;
   }
 }
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.columns {
+  flex-direction: column;
+}
