@@ -1,5 +1,6 @@
 
 $header-height: 70px;
+$logo-height: 47px;
 
 .header {
   display: flex;
@@ -8,10 +9,22 @@ $header-height: 70px;
   background: $header-bg;
   height: $header-height;
   border-bottom: 2px solid $gray;
-  padding: 0 ($base-spacing-unit * 3);
+  padding: 0 $base-spacing-unit * 3;
+
+  @media #{$small} {
+    padding: 0 $base-spacing-unit * 2;
+    background: $white;
+    border-bottom: 1px solid $gray;
+  }
 
   &__content {
     display: flex;
+    justify-content: space-between;
+    max-height: $header-height;
+
+    @media #{$small} {
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -20,6 +33,20 @@ $header-height: 70px;
     font-size: $font-size-medium;
     font-family: "Arial";
     font-style: italic;
-    line-height: $btn-height-small;
+    line-height: $logo-height;
+
+    @media #{$small} {
+      font-size: $font-size-small;
+      line-height: $font-size-small;
+      padding: 0;
+    }
+  }
+
+  &__logo {
+
+    @media #{$small} {
+      width: 50%;
+    }
+
   }
 }

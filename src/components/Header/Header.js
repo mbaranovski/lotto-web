@@ -3,11 +3,13 @@ import logo from "../../assets/images/logo.jpg";
 import Button from '../Button/Button';
 
 const Header = () => <header className="header">
-    <img data-testid="header-logo" src={logo} alt=""/>
-    <div className="header__content">
+    <div className="flex header__content">
+
+    <img className="header__logo" data-testid="header-logo" src={logo} alt=""/>
         <div className="header__text">Home of Lotto Betting</div>
-        <Button>Join</Button>
     </div>
+    <Button>Join</Button>
+
 </header>;
 
 export default Header;

@@ -7,8 +7,7 @@
   text-align: center;
 
   @media #{$small} {
-    margin: $base-spacing-unit 0;
-
+    margin: $base-spacing-unit;
   }
 
 
@@ -21,6 +20,7 @@
     @media #{$small} {
       line-height: $base-spacing-unit * 4;
       flex-direction: column;
+      font-size: $font-size-large;
     }
 
     &--align {

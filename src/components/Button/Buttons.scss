@@ -9,12 +9,16 @@
   color: $white;
 
   &--small {
-    width: $btn-width-small;
+    min-width: $btn-width-small;
     height: $btn-height-small
   }
 
   &--large {
-    width: $btn-width-large;
+    min-width: $btn-width-large;
     height: $btn-height-large;
+  }
+
+  &--center {
+    align-self: center;
   }
 }
