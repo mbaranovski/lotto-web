@@ -13,6 +13,8 @@ export default class DrawBox extends React.Component {
 
     parseDrawingDate = ({day, month, year}) => new Date(`${month}.${day}.${year}`).toDateString();
 
+    parseWinningNumbers = (numbers) => numbers ? this.props.config.numberSequence ? numbers[0].toString().split('') : numbers : [];
+
     render() {
         const {data, config: {wide, background, footer, color, special, title, subTitle, type, logo, strong, time, order, dataSpecialName, numberSequence}} = this.props;
 
@@ -22,7 +24,7 @@ export default class DrawBox extends React.Component {
 
         const drawData = data[this.state.step];
         if (!drawData) return null;
-        const numbers = numberSequence ? drawData.numbers[0].toString().split('') : drawData.numbers;
+        const numbers = this.parseWinningNumbers(drawData.numbers);
         const specialNumbers = drawData[dataSpecialName];
         return (
             <div style={{borderLeftColor: color}} className={`draw-box__item ${wide ? 'draw-box__item--wide' : ''}`}>
