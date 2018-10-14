@@ -22,7 +22,6 @@ export default class DrawBox extends React.Component {
 
         const drawData = data[this.state.step];
         if (!drawData) return null;
-        console.log('MICHAL: ', drawData)
         const numbers = numberSequence ? drawData.numbers[0].toString().split('') : drawData.numbers;
         const specialNumbers = drawData[dataSpecialName];
         return (
