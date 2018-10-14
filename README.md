@@ -1,3 +1,6 @@
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![CircleCI](https://circleci.com/gh/mbaranovski/lotto-web/tree/master.svg?style=svg)](https://circleci.com/gh/mbaranovski/lotto-web/tree/master)
+
 ## Lotto web project
 Live: https://lotto-web-cloud.herokuapp.com (Use with CORS plugin enabled)
 

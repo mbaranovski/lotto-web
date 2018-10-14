@@ -31,8 +31,12 @@
   &__bottom {
     text-align: center;
     padding: $base-spacing-unit 0 $base-spacing-unit * 3 0;
-    background: linear-gradient(90deg, #F56632 0%, #C62C82 58.64%, #C52B83 100%);
-
+    background: linear-gradient(
+      90deg,
+      #f56632 0%,
+      #c62c82 58.64%,
+      #c52b83 100%
+    );
 
     &__draw-logo {
       height: 57px;

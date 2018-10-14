@@ -26,6 +26,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "prettier": "1.14.3",
     "react-testing-library": "^5.2.0"
   }
 }
