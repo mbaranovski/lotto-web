@@ -13,6 +13,7 @@ export const UPPER_DRAWS_SETTINGS = {
         dataName: 'monWedOz',
         dataSpecialName: 'supplementary',
         wide: true,
+        toggleable: true
     },
     KENOLAND: {
         order: 2,
@@ -31,6 +32,7 @@ export const UPPER_DRAWS_SETTINGS = {
         subTitle: 'Drawn every Thursday',
         dataName: 'powerBall',
         dataSpecialName: 'powerballs',
+        toggleable: true
     },
     TATTS_LOTTO: {
         order: 4,
@@ -41,7 +43,8 @@ export const UPPER_DRAWS_SETTINGS = {
         title: 'TATTSLOTTO',
         subTitle: 'X Lotto, Gold Lotto, Saturday Lotto.',
         dataName: 'saturdayOz',
-        dataSpecialName: 'supplementary'
+        dataSpecialName: 'supplementary',
+        toggleable: true
     },
     OZ_LOTTO: {
         order: 5,
@@ -52,7 +55,8 @@ export const UPPER_DRAWS_SETTINGS = {
         title: 'OZ LOTTO',
         subTitle: 'Drawn every Tuesday',
         dataName: 'ozLotto',
-        dataSpecialName: 'bonus'
+        dataSpecialName: 'bonus',
+        toggleable: true
     }
 };
 
@@ -70,7 +74,8 @@ export const LOWER_DRAWS_SETTINGS = {
         dataSpecialName: 'powerBall',
         wide: true,
         strong: true,
-        time: '2 Std. 47 Min.'
+        time: '2 Std. 47 Min.',
+        toggleable: true
     },
     WORLD_MILLIONS: {
         order: 2,
@@ -82,7 +87,9 @@ export const LOWER_DRAWS_SETTINGS = {
         subTitle: '$50 Million',
         dataName: 'worldMillions',
         strong: true,
-        time: '2 Std. 47 Min.'
+        time: '2 Std. 47 Min.',
+        numberSequence: true,
+        toggleable: false
     },
     US_MEGA_MILLIONS: {
         order: 3,
@@ -96,7 +103,9 @@ export const LOWER_DRAWS_SETTINGS = {
         dataName: 'megaMillions',
         dataSpecialName: 'megaballs',
         strong: true,
-        time: '2 Std. 47 Min.'
+        time: '2 Std. 47 Min.',
+        toggleable: true
+
     },
     KENO247: {
         order: 4,
@@ -108,7 +117,9 @@ export const LOWER_DRAWS_SETTINGS = {
         subTitle: '$50 Million',
         dataName: 'keno247',
         strong: true,
-        time: '2 Std. 47 Min.'
+        time: '2 Std. 47 Min.',
+        toggleable: true
+
     },
     FRI_LOTTO: {
         order: 5,
@@ -120,6 +131,8 @@ export const LOWER_DRAWS_SETTINGS = {
         subTitle: '$50 Million',
         dataName: 'fridayLotto',
         strong: true,
-        time: '2 Std. 47 Min.'
+        time: '2 Std. 47 Min.',
+        numberSequence: true,
+        toggleable: false
     }
 }
