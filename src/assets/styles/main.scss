@@ -1,18 +1,18 @@
 // Settings and colors
-@import 'settings/colors';
-@import 'settings/variables';
+@import "settings/colors";
+@import "settings/variables";
 
 // Core styles
-@import 'core/core';
-@import 'core/typography';
+@import "core/core";
+@import "core/typography";
 
 // Components, the real css that you write everyday based on the design
-@import '../../components/App/App';
-@import '../../components/Header/Header';
-@import '../../components/Button/Buttons';
-@import '../../components/Divider/Divider';
-@import '../../components/Kenoland/KenolandDivider';
-@import '../../components/DrawBox/DrawBox';
-@import '../../components/DrawBox/Number';
-@import '../../components/Kenoland/KenolandDrawBox';
-@import '../../components/Spinner/Spinner';
+@import "../../components/App/App";
+@import "../../components/Header/Header";
+@import "../../components/Button/Buttons";
+@import "../../components/Divider/Divider";
+@import "../../components/Kenoland/KenolandDivider";
+@import "../../components/DrawBox/DrawBox";
+@import "../../components/DrawBox/Number";
+@import "../../components/Kenoland/KenolandDrawBox";
+@import "../../components/Spinner/Spinner";

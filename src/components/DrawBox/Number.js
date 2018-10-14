@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
-export const Number = ({color, number}) => (
-    <div className="number" style={{borderColor: color}}>
-        {number}
-    </div>
-)
+export const Number = ({ color, number }) => (
+  <div className="number" style={{ borderColor: color }}>
+    {number}
+  </div>
+);

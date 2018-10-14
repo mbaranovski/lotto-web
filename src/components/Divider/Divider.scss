@@ -1,4 +1,3 @@
-
 .divider {
   width: 100%;
   align-self: center;
@@ -10,12 +9,10 @@
     margin: $base-spacing-unit;
   }
 
-
   &__text {
     font-size: $font-size-larger;
     font-weight: 900;
     display: flex;
-
 
     @media #{$small} {
       line-height: $base-spacing-unit * 4;
@@ -37,9 +34,6 @@
 
     @media #{$small} {
       margin-top: $base-spacing-unit;
-
     }
   }
-
-
 }

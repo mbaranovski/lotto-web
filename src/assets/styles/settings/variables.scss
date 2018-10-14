@@ -1,8 +1,8 @@
 // Typography
 
-$font-family-daxline-pro: 'Daxline Pro', 'Helvetica Neue', Helvetica !default;
+$font-family-daxline-pro: "Daxline Pro", "Helvetica Neue", Helvetica !default;
 $font-family-base: $font-family-daxline-pro;
-$font-family-icons: 'll-icon-font';
+$font-family-icons: "ll-icon-font";
 $font-size-base: 14px;
 $font-weight-base: 300;
 $line-height-base: 21px;
@@ -32,9 +32,9 @@ $screen-small: 414px !default;
 $screen-medium: 768px !default;
 $screen-large: 1024px !default;
 
-$small: 'only screen and (max-width: #{$screen-small})';
-$medium: 'only screen and (max-width: #{$screen-medium})';
-$large: 'only screen and (max-width: #{$screen-large})';
+$small: "only screen and (max-width: #{$screen-small})";
+$medium: "only screen and (max-width: #{$screen-medium})";
+$large: "only screen and (max-width: #{$screen-large})";
 
 // Grid
 $gutter: $base-spacing-unit;
