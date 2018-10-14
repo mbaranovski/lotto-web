@@ -54,7 +54,7 @@
     }
 
     #{$this}__name {
-      padding: $base-spacing-unit * 3 $base-spacing-unit * 2;
+      padding: $base-spacing-unit * 3 $base-spacing-unit * 2 0;
 
       #{$this}__title {
         font-weight: 900;
@@ -106,6 +106,7 @@
 
     #{$this}__arrow {
       font-size: $font-size-large;
+      cursor: pointer;
     }
 
     #{$this}__current-draw {
@@ -134,4 +135,22 @@
     }
   }
 
+}
+
+.drawbox-enter {
+  opacity: 0.01;
+}
+
+.drawbox-enter.drawbox-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.drawbox-leave {
+  opacity: 1;
+}
+
+.drawbox-leave.drawbox-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
